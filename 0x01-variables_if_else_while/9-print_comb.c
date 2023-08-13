@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description - This programs prints out all possible combinations of single digit numbers.
+ * Description - This programs prints combinations of single digit numbers.
  *
  * Return: Always 0 (Success)
  */
@@ -17,7 +17,7 @@ int main(void)
 
 		if (combo != 9)
 		{
-			putchar('.');
+			putchar(',');
 			putchar(' ');
 		}
 
