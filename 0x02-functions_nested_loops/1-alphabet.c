@@ -1,12 +1,13 @@
-#include <unistd.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
  * print_alphabet - Entry point
  *
  * Description - This programs utilizes the prototype of a function.
  *
- * Return: Always 0.
- *.
+ * Return: Always Success
+ *
  */
 
 void print_alphabet(void)
@@ -21,16 +22,4 @@ void print_alphabet(void)
 
 	_putchar('\n');
 
-}
-
-/**
- * main - Demonstrates how to call the "print_alphabet" function.
- *
- * Return: 0
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
