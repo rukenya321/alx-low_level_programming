@@ -13,7 +13,5 @@ int add(int u, int i)
 {
 	int result = u + i;
 
-	printf("%d\n", result);
-
-	return (0);
+	return (result);
 }
