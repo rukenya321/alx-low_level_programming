@@ -17,6 +17,6 @@ void times_table(void)
 			printf("%2d, ", h * v);
 		}
 
-		printf("\n");
+		printf("$\n");
 	}
 }
