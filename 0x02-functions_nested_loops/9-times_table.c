@@ -14,10 +14,10 @@ void times_table(void)
 	{
 		for (v = 0; v <= 9; v++)
 		{
-			printf("%d", h * v);
+			printf("%2d", h * v);
 			if (v < 9)
 			{
-				printf(", ");
+				printf(",");
 			}
 		}
 		printf("\n");
