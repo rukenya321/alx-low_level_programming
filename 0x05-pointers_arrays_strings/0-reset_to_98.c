@@ -3,6 +3,8 @@
 /**
  * reset_to_98 - Entry point.
  *
+ * @n: Int for the test
+ *
  * Return: Always 0.
  */
 
