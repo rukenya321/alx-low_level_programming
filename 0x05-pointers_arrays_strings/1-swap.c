@@ -3,14 +3,17 @@
 /**
  * swap_int - Entry point.
  *
- * @swap: Swap integers.
+ * @a: int *
+ *
+ * @b: int *
  *
  * Return: Always 0.
  */
 
 void swap_int(int *a, int *b)
 {
-	int swap = *a;
+
+	int swp = *a;
 	*a = *b;
-	*b = swap;
+	*b = swp;
 }
