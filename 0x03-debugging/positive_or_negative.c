@@ -10,5 +10,5 @@
 
 void positive_or_negative(int i)
 {
-
+	i = 98;
 }
