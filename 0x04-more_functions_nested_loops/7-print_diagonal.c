@@ -15,17 +15,17 @@ void print_diagonal(int n)
 	int zpace;
 
 	if (n <= 0)
-	{
+
 		_putchar('\n');
-	}
+
 	else
 	{
 		for (tiAgno = 1; tiAgno <= n; tiAgno++)
 		{
 			for (zpace = 1; zpace <= tiAgno; zpace++)
-			{
+
 				_putchar(' ');
-			}
+
 			_putchar(92);
 			_putchar('\n');
 		}
