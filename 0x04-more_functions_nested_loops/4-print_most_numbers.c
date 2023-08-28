@@ -3,8 +3,6 @@
 /**
  * print_most_numbers - Entry point
  *
- * @two4: Int for the test
- *
  * Return: void
  */
 
