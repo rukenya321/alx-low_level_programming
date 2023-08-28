@@ -12,6 +12,7 @@
 void print_diagonal(int n)
 {
 	int tiAgno;
+	int zpace;
 
 	if (n <= 0)
 	{
@@ -21,8 +22,12 @@ void print_diagonal(int n)
 	{
 		for (tiAgno = 1; tiAgno <= n; tiAgno++)
 		{
+			for (zpace = 1; zpace <= tiAgno; zpace++)
+			{
+				_putchar(' ');
+			}
 			_putchar(92);
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
