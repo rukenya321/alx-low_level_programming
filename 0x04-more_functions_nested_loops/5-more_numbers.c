@@ -11,17 +11,20 @@ void more_numbers(void)
 {
 	int ctimes;
 	int cnum;
+	int crounds;
 
-	for (ctimes = 0; ctimes <= 10; ctimes++)
+	for (ctimes = 1; ctimes <= 10; ctimes++)
 	{
-		for (cnum = 0; cnum <= 14; cnum++)
+		for (crounds = 0; crounds <= 14; crounds++)
 		{
-			if (cnum >= 10)
+			cnum = crounds;
+			if (crounds > 9)
 			{
-				_putchar(cnum / 10 + '0');
+				_putchar(1 + 48);
+				cnum = crounds % 10;
 			}
 
-			_putchar(cnum % 10 + '0');
+			_putchar(cnum + 48);
 		}
 
 		_putchar('\n');
