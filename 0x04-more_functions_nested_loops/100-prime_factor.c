@@ -1,4 +1,4 @@
-#include <stdoi.h>
+#include <stdio.h>
 
 /**
  * tsqr - Entyr point
@@ -42,3 +42,23 @@ void prime_largest(long int p)
 		{
 			p = p / primo;
 			lager = primo;
+		}
+	}
+
+	if (p > 2)
+		lager = p;
+	printf("%d\n", lager);
+}
+
+/**
+*main - Entry point check code
+*
+*Return: Always 0.
+*/
+
+int main(void)
+{
+	prime_largest(612852475143);
+
+	return (0);
+}
