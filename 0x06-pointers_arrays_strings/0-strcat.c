@@ -5,6 +5,7 @@
   *
   *@dest: First character
   *@src: Second character
+  *Return: The original value of dest.
   */
 
 char *_strcat(char *dest, char *src)
