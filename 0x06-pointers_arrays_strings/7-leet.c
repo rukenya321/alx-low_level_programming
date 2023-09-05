@@ -12,32 +12,19 @@ char *leet(char *strn)
 {
 
 	char *initstring_value = strn;
+	char C_letters[] = {'A', 'E', 'O', 'T', 'L'};
+	int num1[] = {4, 3, 0, 7, 1};
+	unsigned int liit;
 
-	while (*strn != '\0')
+	while (*strn)
 	{
-		char liit = *strn;
-
-		if ((liit == 'a' || liit == 'A'))
+		for (liit = 0; liit < sizeof(C_letters) / sizeof(char); liit++)
 		{
-			*strn = '4';
+			if (*strn == C_letters[liit] || *strn == C_letters[liit] + 32)
+			{
+				*strn = 48 + num1[liit];
+			}
 		}
-		else if (liit == 'e' || liit == 'E')
-		{
-			*strn = '3';
-		}
-		else if (liit == 'o' || liit == 'O')
-		{
-			*strn = '0';
-		}
-		else if (liit == 't' || liit == 'T')
-		{
-			*strn = '7';
-		}
-		else if (liit == 'l' || liit == 'L')
-		{
-			*strn = '1';
-		}
-
 		strn++;
 	}
 
