@@ -13,16 +13,19 @@ int is_prime_number(int n)
 
 	if (n <= 1)
 	{
-		return (0);
+		return 0;
 	}
+
 	if (n <= 3)
 	{
 		return (1);
 	}
+
 	if (n % 2 == 0 || n % 3 == 0)
 	{
 		return (0);
 	}
+
 	for (p = 5; p * p <= n; p += 6)
 	{
 		if (n % p == 0 || n % (p + 2) == 0)
