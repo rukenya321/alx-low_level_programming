@@ -1,34 +1,38 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* is_prime_number - checks if a number is prime.
-* @n: Integer for the test.
-* @p: Int for the test
-* Return: 1 if number is prime or 0 if not.
+* is_prime_number - check a prime number
+* @n2: first number for the test
+* @n: second number for the test
+* Return: 0 or 1
 */
 
+int prime_checker(int n, int n2);
 int is_prime_number(int n)
 {
-	int p;
+	return (prime_checker(n, 2));
+}
 
-	if (n <= 1)
-	{
-		return (0);
-	}
-	if (n <= 3)
+/**
+* prime_checker - checks whether no's less than n can divide it
+* @n: int for the test
+* @n2: int for the test
+* Return: return an int
+*/
+
+int prime_checker(int n, int n2)
+{
+	if (n2 >= n && n > 1)
 	{
 		return (1);
 	}
-	if (n % 2 == 0 || n % 3 == 0)
+	else if (n % n2 == 0 || n <= 1)
 	{
 		return (0);
 	}
-	for (p = 5; p * p <= n; p += 6)
+	else
 	{
-		if (n % p == 0 || n % (p + 2) == 0)
-		{
-			return (0);
-		}
+		return (prime_checker(n, n2 + 1));
 	}
-	return (1);
 }
