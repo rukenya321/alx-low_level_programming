@@ -14,6 +14,7 @@ int is_prime_number(int n)
 	return (prime_checker(n, 2));
 }
 
+
 /**
 * prime_checker - checks whether no's less than n can divide it
 * @n: int for the test
